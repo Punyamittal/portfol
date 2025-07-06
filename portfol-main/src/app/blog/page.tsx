@@ -6,7 +6,6 @@ import { BlogCard } from "@/components/ui/blog-card";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-import Sketchfab3DModel from "@/components/sketchfab-3d-model";
 
 const LetterGlitch = dynamic(() => import("@/components/ui/letter-glitch"), {
   ssr: false,
@@ -47,12 +46,6 @@ function BlogPage() {
               Thoughts, tutorials, and insights on programming and technology
             </p>
           </motion.div>
-
-          <Sketchfab3DModel 
-            className="mb-12"
-            height="h-96"
-            width="w-full max-w-4xl"
-          />
 
           {BLOG_POSTS.length === 0 ? (
             <motion.div

@@ -65,12 +65,8 @@ export default function RootLayout({
           data-website-id={process.env.UMAMI_SITE_ID}
         ></Script>
         {/* <Analytics /> */}
-        <link 
-          rel="preload" 
-          href="https://sketchfab.com/models/4d11fdf6d57a4fda924e9e5623602022/embed" 
-          as="iframe" 
-          type="text/html"
-        />
+
+
       </head>
       <body>
         <ThemeProvider

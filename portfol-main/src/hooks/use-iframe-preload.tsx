@@ -27,7 +27,7 @@ export const useIframePreload = ({
         iframe.style.position = 'absolute';
         iframe.style.left = '-9999px';
         iframe.frameBorder = "0";
-        iframe.allowFullScreen = true;
+        iframe.allowFullscreen = true;
         
         // Set default attributes
         iframe.setAttribute('mozallowfullscreen', 'true');
